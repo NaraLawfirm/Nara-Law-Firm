@@ -3,7 +3,14 @@
 // =========================================================
 
 window.addEventListener('load',()=>{
-  setTimeout(()=>document.getElementById('loader').style.cssText='opacity:0;visibility:hidden',2600);
+ setTimeout(() => {
+    const loader = document.getElementById('loader');
+
+    if (loader) {
+        loader.style.opacity = '0';
+        loader.style.visibility = 'hidden';
+    }
+}, 1200);
 });
 
 // Animasi saat section masuk layar
