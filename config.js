@@ -13,7 +13,7 @@
 const NARA_CONTACT = {
   whatsapp: "6285850333555",
   phoneDisplay: "+6285850333555",
-  email: "naralawfirmsmg.com",
+  email: "naralawfirmsmg@gmail.com",
   address: "Jl. Kelud Raya No.75, Petompan, Kec. Gajahmungku Kota Semarang, Jawa Tengah 50237",
   website: "https://"
 };
