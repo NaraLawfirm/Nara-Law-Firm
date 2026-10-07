@@ -223,31 +223,23 @@ document.addEventListener("DOMContentLoaded", function () {
             NARA_CONTACT.address;
 
     }
-
-
     /* =====================================================
        WHATSAPP
     ===================================================== */
-
     const whatsapp =
         NARA_CONTACT.whatsapp;
-
-
     if (!whatsapp) {
+       
         return;
     }
-
 
     /*
         Pesan otomatis WhatsApp
     */
-
     const message =
         encodeURIComponent(
             "Halo NARA Law Firm, saya ingin berkonsultasi mengenai layanan hukum."
         );
-
-
     const whatsappURL =
         "https://wa.me/" +
         whatsapp +
@@ -258,77 +250,53 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =====================================================
        CONTACT BUTTON
     ===================================================== */
-
     const contactButton =
         document.getElementById(
             "contact-whatsapp"
         );
-
-
     if (contactButton) {
-
         contactButton.href =
             whatsappURL;
-
         contactButton.target =
             "_blank";
-
         contactButton.rel =
             "noopener noreferrer";
-
     }
-
-
     /* =====================================================
        HERO CONSULTATION BUTTON
     ===================================================== */
-
     const heroButton =
         document.getElementById(
             "hero-whatsapp"
         );
-
-
     if (heroButton) {
-
         heroButton.href =
             whatsappURL;
-
         heroButton.target =
             "_blank";
-
         heroButton.rel =
             "noopener noreferrer";
-
     }
-
 });
-
 
 /* =========================================================
    PREVENT EMPTY HASH LINKS
 ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
-
     const hashLinks =
         document.querySelectorAll(
             'a[href="#"]'
         );
-
-
     hashLinks.forEach(function (link) {
-
         link.addEventListener(
             "click",
             function (event) {
-
                 /*
                     Hanya mencegah link kosong.
                     Tidak mengganggu link section
                     seperti #home, #about, dll.
                 */
-
                 event.preventDefault();
 
             }
