@@ -1388,3 +1388,98 @@ footer img {
   }
 
 }
+
+/* =================================================
+   TEAM - BLACK & GOLD FINAL THEME
+   Tambahkan PALING BAWAH style.css
+================================================= */
+
+/* BACKGROUND SECTION */
+.team {
+  background: #080808 !important;
+  color: #ffffff !important;
+}
+
+/* JUDUL SECTION */
+.team .eyebrow {
+  color: #c9922e !important;
+}
+
+.team .section-head h2 {
+  color: #ffffff !important;
+}
+
+.team .section-head h2 em {
+  color: #d4a13d !important;
+}
+
+/* DESKRIPSI TEAM */
+.team .section-description {
+  color: #b8b8b8 !important;
+}
+
+
+/* =================================================
+   FOTO
+================================================= */
+
+.team .team-image {
+  background: #151515 !important;
+}
+
+
+/* =================================================
+   JABATAN - GOLD
+================================================= */
+
+.team .role {
+  color: #d4a13d !important;
+}
+
+
+/* =================================================
+   NAMA ANGGOTA - PUTIH
+================================================= */
+
+.team .team-info h3 {
+  color: #ffffff !important;
+}
+
+
+/* =================================================
+   KEAHLIAN - ABU TERANG
+================================================= */
+
+.team .team-detail p {
+  color: #d0d0d0 !important;
+}
+
+
+/* =================================================
+   PENGALAMAN - PUTIH / ABU TERANG
+================================================= */
+
+.team .team-detail + .team-detail {
+  border-top: 1px solid rgba(201, 146, 46, 0.35) !important;
+}
+
+.team .team-detail + .team-detail p {
+  color: #c9c9c9 !important;
+}
+
+
+/* =================================================
+   HOVER EFFECT
+================================================= */
+
+.team .team-card {
+  transition: transform 0.35s ease;
+}
+
+.team .team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team .team-card:hover .team-info h3 {
+  color: #f0c76b !important;
+}
