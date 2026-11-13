@@ -948,3 +948,295 @@ footer img {
   }
 
 }
+/* =================================================
+   FINAL FIX - NARA LAW FIRM OUR TEAM
+   Tambahkan paling bawah style.css
+================================================= */
+
+.team {
+  background: #f8f6f1;
+  color: #1a1713;
+}
+
+.team .section-head {
+  max-width: 900px;
+  margin-bottom: 70px;
+}
+
+.team .eyebrow {
+  color: #a66d1d;
+}
+
+.team .section-head h2 {
+  color: #1a1713;
+}
+
+.team .section-head h2 em {
+  color: #b07a24;
+}
+
+.team .section-description {
+  max-width: 650px;
+  margin-top: 18px;
+  color: #6c6258;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =================================================
+   TEAM GRID - 2 KOLOM DI LAPTOP
+================================================= */
+
+.team .team-grid {
+  display: grid !important;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+  gap: 80px 70px !important;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  align-items: start;
+}
+
+
+/* =================================================
+   TEAM CARD
+================================================= */
+
+.team .team-card {
+  display: block !important;
+
+  width: 100% !important;
+
+  min-width: 0;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  overflow: hidden;
+}
+
+
+/* =================================================
+   FOTO - FRAME SERAGAM
+================================================= */
+
+.team .team-image {
+  position: relative;
+
+  width: 100% !important;
+
+  height: 520px !important;
+
+  margin: 0 0 30px !important;
+
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  background: #161616;
+
+  display: block !important;
+}
+
+
+/* FOTO DI DALAM FRAME */
+
+.team .team-image img {
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  max-width: none !important;
+
+  object-fit: cover !important;
+
+  object-position: center top !important;
+
+  transition: transform 0.5s ease;
+}
+
+.team .team-card:hover .team-image img {
+  transform: scale(1.03);
+}
+
+
+/* =================================================
+   INFORMASI ANGGOTA
+================================================= */
+
+.team .team-info {
+  width: 100% !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  text-align: left !important;
+}
+
+
+/* JABATAN */
+
+.team .role {
+  margin: 0 0 14px !important;
+
+  color: #a66d1d !important;
+
+  font-family: Montserrat, Arial, sans-serif !important;
+
+  font-size: 11px !important;
+
+  font-weight: 600 !important;
+
+  letter-spacing: 2.5px !important;
+
+  line-height: 1.4 !important;
+
+  text-transform: uppercase !important;
+}
+
+
+/* NAMA */
+
+.team .team-info h3 {
+  margin: 0 0 24px !important;
+
+  color: #1a1713 !important;
+
+  font-family: "Cormorant Garamond", serif !important;
+
+  font-size: clamp(32px, 3vw, 43px) !important;
+
+  font-weight: 500 !important;
+
+  line-height: 1.08 !important;
+
+  text-align: left !important;
+}
+
+
+/* =================================================
+   DETAIL KEAHLIAN & PENGALAMAN
+================================================= */
+
+.team .team-detail {
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  border: none !important;
+}
+
+
+/* HILANGKAN LABEL:
+   KEAHLIAN & PENGALAMAN */
+
+.team .team-detail strong {
+  display: none !important;
+}
+
+
+/* ISI TEKS */
+
+.team .team-detail p {
+  margin: 0 !important;
+
+  color: #6c6258 !important;
+
+  font-size: 16px !important;
+
+  font-family: Montserrat, Arial, sans-serif !important;
+
+  font-weight: 400 !important;
+
+  line-height: 1.8 !important;
+
+  text-align: left !important;
+}
+
+
+/* DETAIL KEDUA = PENGALAMAN */
+
+.team .team-detail + .team-detail {
+  margin-top: 22px !important;
+
+  padding-top: 22px !important;
+
+  border-top: 1px solid #d8d1c8 !important;
+}
+
+.team .team-detail + .team-detail p {
+  color: #7a3024 !important;
+}
+
+
+/* =================================================
+   TABLET
+================================================= */
+
+@media (max-width: 1100px) {
+
+  .team .team-grid {
+    gap: 60px 45px !important;
+  }
+
+  .team .team-image {
+    height: 450px !important;
+  }
+
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 800px) {
+
+  .team .team-grid {
+    grid-template-columns: 1fr !important;
+
+    gap: 70px !important;
+  }
+
+  .team .team-image {
+    height: 520px !important;
+  }
+
+  .team .team-info h3 {
+    font-size: 38px !important;
+  }
+
+}
+
+
+/* =================================================
+   SMALL MOBILE
+================================================= */
+
+@media (max-width: 480px) {
+
+  .team .team-image {
+    height: 420px !important;
+  }
+
+  .team .team-info h3 {
+    font-size: 32px !important;
+  }
+
+  .team .team-detail p {
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+  }
+
+}
