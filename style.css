@@ -1240,3 +1240,151 @@ footer img {
   }
 
 }
+
+/* =================================================
+   TEAM - FINAL 3 COLUMN LAYOUT
+   Tambahkan PALING BAWAH style.css
+================================================= */
+
+.team {
+  padding-left: 8vw !important;
+  padding-right: 8vw !important;
+}
+
+/* 3 anggota dalam satu baris */
+.team .team-grid {
+  display: grid !important;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+  column-gap: 45px !important;
+  row-gap: 85px !important;
+
+  width: 100% !important;
+  max-width: 1400px !important;
+
+  margin: 0 auto !important;
+
+  align-items: start !important;
+}
+
+/* Kartu */
+.team .team-card {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+/* Frame foto */
+.team .team-image {
+  width: 100% !important;
+  height: 430px !important;
+
+  margin-bottom: 28px !important;
+
+  overflow: hidden !important;
+}
+
+/* Foto */
+.team .team-image img {
+  width: 100% !important;
+  height: 100% !important;
+
+  display: block !important;
+
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+/* Nama */
+.team .team-info h3 {
+  font-size: clamp(26px, 2.2vw, 36px) !important;
+
+  line-height: 1.1 !important;
+
+  margin-bottom: 18px !important;
+}
+
+/* Jabatan */
+.team .role {
+  color: #a66d1d !important;
+
+  font-size: 10px !important;
+
+  letter-spacing: 2px !important;
+
+  margin-bottom: 12px !important;
+}
+
+/* Isi keahlian dan pengalaman */
+.team .team-detail p {
+  font-size: 14px !important;
+
+  line-height: 1.75 !important;
+}
+
+
+/* =================================================
+   TABLET
+   2 KOLOM
+================================================= */
+
+@media (max-width: 1000px) {
+
+  .team {
+    padding-left: 7vw !important;
+    padding-right: 7vw !important;
+  }
+
+  .team .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    column-gap: 45px !important;
+    row-gap: 70px !important;
+  }
+
+  .team .team-image {
+    height: 450px !important;
+  }
+
+}
+
+
+/* =================================================
+   MOBILE
+   1 KOLOM
+================================================= */
+
+@media (max-width: 650px) {
+
+  .team .team-grid {
+    grid-template-columns: 1fr !important;
+
+    row-gap: 65px !important;
+  }
+
+  .team .team-image {
+    height: 500px !important;
+  }
+
+  .team .team-info h3 {
+    font-size: 34px !important;
+  }
+
+}
+
+
+/* =================================================
+   HP KECIL
+================================================= */
+
+@media (max-width: 480px) {
+
+  .team .team-image {
+    height: 420px !important;
+  }
+
+  .team .team-info h3 {
+    font-size: 30px !important;
+  }
+
+}
