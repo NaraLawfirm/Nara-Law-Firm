@@ -1485,32 +1485,40 @@ footer img {
 }
 
 /* =================================================
-   ABOUT NARA - SMALL GOLD FRAME LOGO
+   ABOUT NARA - ROUND GOLD FRAME + GOLD GLOW
 ================================================= */
 
 .about-photo {
+  /* UKURAN */
   width: 190px;
   height: 190px;
 
+  /* POSISI */
   margin: 0 auto;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  overflow: hidden;
+  /* BENTUK BULAT */
+  border-radius: 50%;
 
   /* BINGKAI EMAS */
-  border: 2px solid #c9922e;
+  border: 2px solid #d4a13d;
 
-  /* EFEK ELEGAN */
-  box-shadow:
-    0 0 0 6px #080808,
-    0 0 0 7px rgba(201, 146, 46, 0.35),
-    0 12px 35px rgba(201, 146, 46, 0.18);
+  /* AGAR GAMBAR MENGIKUTI BENTUK BULAT */
+  overflow: hidden;
 
+  /* BACKGROUND */
   background: #000;
 
+  /* EFEK CAHAYA EMAS DI BELAKANG */
+  box-shadow:
+    0 0 25px rgba(212, 161, 61, 0.35),
+    0 0 50px rgba(212, 161, 61, 0.22),
+    0 0 80px rgba(212, 161, 61, 0.12);
+
+  /* ANIMASI MUNCUL */
   opacity: 0;
 
   transform: translateY(25px) scale(0.90);
@@ -1518,11 +1526,13 @@ footer img {
   transition:
     opacity 0.9s ease,
     transform 0.9s ease,
-    box-shadow 0.5s ease;
+    box-shadow 0.6s ease;
 }
 
 
-/* LOGO */
+/* =================================================
+   LOGO DI DALAM BINGKAI
+================================================= */
 
 .about-photo img {
   width: 100%;
@@ -1532,33 +1542,43 @@ footer img {
 
   object-fit: contain;
 
+  /* IKUT MEMBULAT */
+  border-radius: 50%;
+
   transition: transform 0.6s ease;
 }
 
 
-/* ANIMASI MUNCUL */
+/* =================================================
+   ANIMASI MUNCUL SAAT ABOUT TERLIHAT
+================================================= */
 
 .about-mark.reveal.visible .about-photo {
   opacity: 1;
+
   transform: translateY(0) scale(1);
 }
 
 
-/* HOVER */
+/* =================================================
+   HOVER EFFECT
+================================================= */
 
 .about-photo:hover {
   box-shadow:
-    0 0 0 6px #080808,
-    0 0 0 8px rgba(201, 146, 46, 0.6),
-    0 15px 45px rgba(201, 146, 46, 0.28);
+    0 0 30px rgba(212, 161, 61, 0.50),
+    0 0 65px rgba(212, 161, 61, 0.30),
+    0 0 100px rgba(212, 161, 61, 0.15);
 }
 
 .about-photo:hover img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 
-/* MOBILE */
+/* =================================================
+   MOBILE
+================================================= */
 
 @media (max-width: 800px) {
 
