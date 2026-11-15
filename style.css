@@ -1583,3 +1583,25 @@ footer img {
   }
 
 }
+
+/* =================================================
+   OUR TEAM - FOTO FULL TANPA TERPOTONG
+================================================= */
+
+.team .team-image {
+  background: #080808 !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.team .team-image img {
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  transform: none !important;
+}
