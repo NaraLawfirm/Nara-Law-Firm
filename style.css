@@ -1485,12 +1485,12 @@ footer img {
 }
 
 /* =================================================
-   ABOUT NARA - NEW LOGO
+   ABOUT NARA - LOGO UKURAN PROPORSIONAL
 ================================================= */
 
 .about-photo {
-  width: 100%;
-  max-width: 430px;
+  width: 230px;
+  height: 230px;
 
   margin: 0 auto;
 
@@ -1498,9 +1498,11 @@ footer img {
   justify-content: center;
   align-items: center;
 
+  overflow: hidden;
+
   opacity: 0;
 
-  transform: translateY(30px) scale(0.92);
+  transform: translateY(25px) scale(0.90);
 
   transition:
     opacity 0.9s ease,
@@ -1512,13 +1514,11 @@ footer img {
 
 .about-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
 
   display: block;
 
   object-fit: contain;
-
-  filter: drop-shadow(0 10px 35px rgba(201, 146, 46, 0.15));
 
   transition:
     transform 0.6s ease,
@@ -1530,7 +1530,6 @@ footer img {
 
 .about-mark.reveal.visible .about-photo {
   opacity: 1;
-
   transform: translateY(0) scale(1);
 }
 
@@ -1538,9 +1537,7 @@ footer img {
 /* HOVER */
 
 .about-photo:hover img {
-  transform: scale(1.04);
-
-  filter: drop-shadow(0 15px 45px rgba(201, 146, 46, 0.28));
+  transform: scale(1.03);
 }
 
 
@@ -1549,7 +1546,8 @@ footer img {
 @media (max-width: 800px) {
 
   .about-photo {
-    max-width: 300px;
+    width: 180px;
+    height: 180px;
   }
 
 }
