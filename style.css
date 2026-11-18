@@ -2414,3 +2414,139 @@ footer img {
     }
 
 }
+
+
+/* =================================
+   NARA - CLIENT REVIEWS MOBILE FIX
+================================= */
+
+#reviews,
+#reviews * {
+    box-sizing: border-box !important;
+}
+
+#reviews {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 75px 20px !important;
+    position: relative;
+    overflow: hidden;
+    background: #080808 !important;
+}
+
+#reviews .reviews-heading {
+    width: 100% !important;
+    max-width: 650px !important;
+    margin: 0 auto 40px !important;
+    text-align: center !important;
+}
+
+#reviews .reviews-heading h2 {
+    color: #d8b56d !important;
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+}
+
+#reviews .reviews-heading p {
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+    text-align: center !important;
+}
+
+#reviews .reviews-container {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 0 auto !important;
+}
+
+#reviews .review-card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: auto !important;
+    padding: 27px 23px !important;
+    background: #151515 !important;
+    border: 1px solid rgba(201, 164, 92, 0.45) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+#reviews .review-stars {
+    color: #d8b56d !important;
+    font-size: 21px !important;
+    letter-spacing: 4px !important;
+    margin-bottom: 18px !important;
+}
+
+#reviews .review-text {
+    color: #d0d0d0 !important;
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 25px !important;
+}
+
+#reviews .review-profile {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    width: 100% !important;
+    border-top: 1px solid rgba(255,255,255,0.12) !important;
+    padding-top: 18px !important;
+}
+
+#reviews .review-avatar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(135deg, #d8b56d, #8f6b32) !important;
+    color: #111 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+#reviews .review-info h3 {
+    color: #e0c17d !important;
+    font-size: 14px !important;
+    margin: 0 0 5px !important;
+}
+
+#reviews .review-info span {
+    color: #999 !important;
+    font-size: 11px !important;
+}
+
+
+/* TABLET */
+
+@media (min-width: 601px) and (max-width: 992px) {
+
+    #reviews .reviews-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+
+/* HP KECIL */
+
+@media (max-width: 400px) {
+
+    #reviews {
+        padding: 65px 16px !important;
+    }
+
+    #reviews .reviews-heading h2 {
+        font-size: 32px !important;
+    }
+
+}
+
