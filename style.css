@@ -1842,3 +1842,409 @@ footer img {
   }
 }
 
+
+/* =====================================================
+   NARA LAW FIRM - FINAL CONTACT SECTION
+   BLACK & GOLD LUXURY DESIGN
+===================================================== */
+
+.contact {
+  background: #080808 !important;
+  padding: 110px 8% !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-heading {
+  max-width: 1350px;
+  margin: 0 auto 65px;
+}
+
+.contact-heading .eyebrow,
+.contact-info-heading .eyebrow,
+.form-heading .eyebrow {
+  color: #d4a13d !important;
+  letter-spacing: 4px;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+
+.contact-heading h2 {
+  color: #f5f1e9 !important;
+  font-size: clamp(45px, 5vw, 68px);
+  line-height: 1.12;
+  margin-bottom: 22px;
+}
+
+.contact-heading h2 em {
+  color: #d4a13d !important;
+}
+
+.contact-description {
+  color: #bdbdbd !important;
+  max-width: 650px;
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+/* MAIN GRID */
+
+.contact-grid {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid !important;
+  grid-template-columns: 1fr 0.9fr !important;
+  gap: 65px !important;
+  align-items: start !important;
+}
+
+/* OFFICE INFORMATION */
+
+.contact-information {
+  width: 100%;
+  min-width: 0;
+}
+
+.contact-info-heading {
+  margin-bottom: 35px;
+}
+
+.contact-info-heading h3 {
+  color: #f5f1e9 !important;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.contact-info-heading > p:last-child {
+  color: #aaa !important;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* CONTACT DETAILS */
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(212,161,61,0.18);
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4a13d;
+  font-size: 23px;
+  border: 1px solid rgba(212,161,61,0.4);
+  background: rgba(212,161,61,0.06);
+}
+
+.contact-item span {
+  display: block;
+  color: #d4a13d !important;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+
+.contact-item p {
+  color: #dedede !important;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-item a {
+  color: #dedede !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #d4a13d !important;
+}
+
+/* GOOGLE MAPS */
+
+.map-container {
+  margin-top: 38px;
+  width: 100%;
+  background: #111;
+  border: 1px solid rgba(212,161,61,0.35);
+  overflow: hidden;
+}
+
+.map-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 20px;
+}
+
+.map-heading > span:first-child {
+  color: #d4a13d;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.map-status {
+  color: #aaa;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+  filter: grayscale(0.85) contrast(1.05);
+  transition: filter 0.4s ease;
+}
+
+.map-container:hover iframe {
+  filter: grayscale(0.2);
+}
+
+.map-direction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 20px;
+  color: #d4a13d !important;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.map-direction:hover {
+  background: rgba(212,161,61,0.09);
+}
+
+.map-direction span {
+  font-size: 19px;
+}
+
+/* CONSULTATION FORM */
+
+.consultation-form {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 38px !important;
+  background: #111111 !important;
+  border: 1px solid rgba(212,161,61,0.35);
+  border-radius: 3px;
+}
+
+.form-heading {
+  margin-bottom: 32px;
+}
+
+.form-heading h3 {
+  color: #f5f1e9 !important;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.form-heading > p:last-child {
+  color: #aaa !important;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* FORM GROUP */
+
+.consultation-form .form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  width: 100%;
+  margin-bottom: 23px !important;
+}
+
+.consultation-form label {
+  color: #d4a13d !important;
+  font-size: 10px !important;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+
+/* INPUT */
+
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+
+  padding: 15px 16px !important;
+
+  background: #080808 !important;
+  color: #fff !important;
+
+  border: 1px solid #39332a !important;
+  border-radius: 2px !important;
+
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 12px !important;
+
+  outline: none !important;
+
+  transition: border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.consultation-form input::placeholder,
+.consultation-form textarea::placeholder {
+  color: #777 !important;
+}
+
+.consultation-form input:focus,
+.consultation-form select:focus,
+.consultation-form textarea:focus {
+  border-color: #d4a13d !important;
+  box-shadow: 0 0 12px rgba(212,161,61,0.12);
+}
+
+.consultation-form select {
+  cursor: pointer;
+  color-scheme: dark;
+}
+
+.consultation-form textarea {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+/* SUBMIT BUTTON */
+
+.consultation-form .submit-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 100% !important;
+  min-height: 57px;
+  padding: 16px 20px !important;
+
+  background: #d4a13d !important;
+  color: #080808 !important;
+  border: 1px solid #d4a13d !important;
+  border-radius: 2px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.consultation-form .submit-btn span {
+  color: #080808 !important;
+  font-size: 20px;
+}
+
+.consultation-form .submit-btn:hover {
+  background: transparent !important;
+  color: #d4a13d !important;
+}
+
+.consultation-form .submit-btn:hover span {
+  color: #d4a13d !important;
+}
+
+.form-note {
+  color: #888 !important;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.7;
+  margin-top: 18px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .contact {
+    padding: 85px 6% !important;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 35px !important;
+  }
+
+  .consultation-form {
+    padding: 25px !important;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .contact {
+    padding: 70px 6% !important;
+  }
+
+  .contact-heading {
+    margin-bottom: 40px;
+  }
+
+  .contact-heading h2 {
+    font-size: 43px !important;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 45px !important;
+  }
+
+  .contact-info-heading h3 {
+    font-size: 31px;
+  }
+
+  .consultation-form {
+    padding: 24px !important;
+  }
+
+  .form-heading h3 {
+    font-size: 28px;
+  }
+
+  .map-container iframe {
+    height: 260px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+  .contact-heading h2 {
+    font-size: 37px !important;
+  }
+
+  .consultation-form {
+    padding: 18px !important;
+  }
+
+  .contact-item {
+    gap: 12px;
+  }
+}
+
