@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://naralawfirm.github.io/Nara-Law-Firm/sitemap.xml
